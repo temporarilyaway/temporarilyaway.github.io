@@ -25,6 +25,7 @@ jobs:
     - name: Build the Jekyll site
       run: bundle exec jekyll build
 
+      ## The secrets.MY_Github_Token is stored in the github secrets via browser
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
